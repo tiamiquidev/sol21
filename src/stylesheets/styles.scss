@@ -1,0 +1,166 @@
+// Load CSS Reset from NPM
+@import "~normalize.css";
+
+:root {
+  background: black;
+  --sol21-text-1: 1rem;
+  --sol21-text-1-7: 1.7rem;
+  --sol21-text-2: 2rem;
+  --sol21-text-3: 3rem;
+  --sol21-text-4: 4rem;
+  --sol21-font-family: 'Share Tech';
+  --sol21-white: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-with-absolute-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.no-link {
+  text-decoration: none;
+}
+
+.full-width {
+  width: 100vw;
+}
+
+.imagen-size {
+  width: 6rem;
+}
+
+.custom-style {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.absolute > p {
+  margin: 0;
+}
+
+footer {
+  height: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.background-color {
+  background: black;
+}
+
+.background-gradient {
+  background: linear-gradient(
+                  #000419 20%,
+                  #000000);
+}
+
+.background-gradient-inverse {
+  background: linear-gradient(
+                  #000000 20%,
+                  #000419);
+}
+
+.middle {
+  height: 30vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-size-1-7 {
+  font-size: var(--sol21-text-1-7);
+}
+
+.font-size-2 {
+  font-size: var(--sol21-text-2);
+}
+
+.font-size-3 {
+  font-size: var(--sol21-text-3);
+}
+
+.font-size-4 {
+  font-size: var(--sol21-text-4);
+}
+
+.title {
+  font-family: var(--sol21-font-family);
+}
+
+.primary {
+  color: var(--sol21-white);
+}
+
+
+.live{
+  overflow:hidden;
+  > li{
+    list-style:none;
+    position:relative;
+    padding:0 0 0 2em;
+    margin:0 0 .5em 10px;
+    transition:.12s;
+
+    &::before{
+      position:absolute;
+      content:'\2022';
+      font-family: Arial;
+      color:#FFF;
+      top:0;
+      left:0;
+      text-align:center;
+      font-size:2em;
+      opacity:.5;
+      line-height:.75;
+      transition:.5s;
+    }
+
+    &:hover{
+      color:#FFF;
+      &::before{
+        transform:scale(2);
+        opacity:1;
+        text-shadow:0 0 4px;
+        transition:.1s;
+      }
+    }
+  }
+
+  &.type2{
+    > li{
+      &::before{
+        content:'';
+        width:10px; height:10px;
+        background:#FFF;
+        border-radius:3px;
+        line-height:0;
+        top:.27em; left:5px;
+      }
+      &:hover::before{
+        transform:none;
+        border-radius:5px;
+        width:25px;
+        left:-10px;
+        background:#BA5353;
+      }
+    }
+  }
+}
