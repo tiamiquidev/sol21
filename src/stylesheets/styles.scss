@@ -9,6 +9,7 @@
   --sol21-text-3: 3rem;
   --sol21-text-4: 4rem;
   --sol21-font-family: 'Share Tech';
+  --sol21-font-family-second: 'Roboto';
   --sol21-white: white;
 }
 
@@ -106,6 +107,15 @@ footer {
   font-family: var(--sol21-font-family);
 }
 
+.text {
+  font-family: var(--sol21-font-family-second);
+}
+
+.margin-corners {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .primary {
   color: var(--sol21-white);
 }
@@ -181,6 +191,11 @@ footer {
   }
   section {
     padding-bottom: 3rem;
+  }
+
+  .margin-corners {
+    margin-left: .5rem;
+    margin-right: .5rem;
   }
 }
 
