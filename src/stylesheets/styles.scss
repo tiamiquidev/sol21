@@ -182,3 +182,9 @@ footer {
     padding-bottom: 3rem;
   }
 }
+
+@media (max-width: 600px) and (orientation: landscape){
+  .middle {
+    height: 60vh;
+  }
+}
