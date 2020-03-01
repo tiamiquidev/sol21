@@ -165,7 +165,7 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .font-size-1-7 {
     font-size: calc(14px + 6 * ((100vw - 320px) / 680));
   }
@@ -183,7 +183,7 @@ footer {
   }
 }
 
-@media (max-width: 600px) and (orientation: landscape){
+@media (max-width: 640px) and (orientation: landscape){
   .middle {
     height: 60vh;
   }
