@@ -122,16 +122,16 @@ footer {
                   white);
 }
 
-.middle {
-  height: 30vh;
-}
-
 .text-center {
   text-align: center;
 }
 
 .font-size-1-7 {
   font-size: var(--sol21-text-1-7);
+}
+
+.imagen-size-automatic {
+  width: 50vw;
 }
 
 .font-size-2 {
@@ -241,6 +241,7 @@ section {
 @media (max-width: 640px) {
   .flex {
     flex-direction: column;
+    align-items: center;
   }
   .font-size-1-7 {
     font-size: calc(14px + 6 * ((100vw - 320px) / 680));
@@ -258,6 +259,14 @@ section {
   .margin-corners {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .imagen-size-cover {
+    width: 20rem;
+  }
+
+  ul {
+    padding: 0;
   }
 }
 
