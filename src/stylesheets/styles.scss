@@ -6,8 +6,8 @@
   --sol21-text-1: .4rem;
   --sol21-text-1-7: 1rem;
   --sol21-text-2: 1.5rem;
-  --sol21-text-3: 2rem;
-  --sol21-text-4: 2.5rem;
+  --sol21-text-3: 1.8rem;
+  --sol21-text-4: 2.1rem;
   --sol21-font-family: 'Roboto';
   --sol21-font-family-second: 'Roboto';
   --sol21-white: white;
@@ -68,7 +68,7 @@ body {
 .custom-style {
   display: flex;
   justify-content: space-evenly;
-  margin: 3rem;
+  margin: 65px;
   flex-flow: row nowrap;
   align-items: center;
 }

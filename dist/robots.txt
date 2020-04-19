@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: http://sol21ct.com//sitemap.xml
-Host: sol21ct.com
